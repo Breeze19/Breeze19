@@ -3,14 +3,14 @@
     position: relative;
     text-align: center;
     color: white;
-    top: -300px;
+    top: 30px;
 }
 /* Centered text */
 .centered {
     position: absolute;
-    top: 90%;
+    top: 15%;
     left: 50%;
-    width: 80%;
+    width: 130%;
     transform: translate(-50%, -50%);
 }
 
@@ -37,7 +37,7 @@
     top: 100%;
     left: 50%;
     width: 50%;
-    transform: translate(120%, -100%);
+    transform: translate(120%, -90%);
 }
 .glimpse{
   background-color: #212121;
