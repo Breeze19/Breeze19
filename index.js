@@ -3,12 +3,13 @@ $(document).ready(function(){
   $("#submit").on('click',function(){
     const data = {
       sportsName: $("#sportsDropdown :selected").text(),
+      noofplayers: $("#noofplayers").text(),
       name: $("#name").val(),
       collegeName: $("#collegeName").val(),
       email: $("#email").val(),
       phno: $("#phno").val()
     }
-    firebase.database().ref("/data/").push().set(data)
     console.log(data)
+    firebase.database().ref("/data/").push().set(data)
   })
 })
