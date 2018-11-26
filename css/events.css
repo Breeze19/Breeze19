@@ -29,12 +29,12 @@
     position: relative;
     text-align: center;
     color: white;
-    top: -200px;
+    top: -150px;
     left: -300px;
 }
 .bti-centered {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 50%;
     width: 50%;
     transform: translate(120%, -90%);

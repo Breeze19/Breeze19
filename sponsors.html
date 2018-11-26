@@ -32,7 +32,25 @@
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="images/Blogo.ico" type="image/x-icon">
-    <link rel="icon" href="images/breeze/WhiteLogo-02.png" type="image/x-icon">
+    <link rel="icon" href="../images/breeze/WhiteLogo-02.ico" type="image/x-icon">
+    <style media="screen">
+    @font-face {
+        font-family: AR;
+        src: url(Atami-Regular.otf);
+    }
+    @font-face {
+        font-family: ADR;
+        src: url(Atami-Display-Regular.otf);
+    }
+    @font-face {
+        font-family: PN;
+        src: url(ProximaNova-Regular.ttf);
+    }
+    @font-face {
+        font-family: PNB;
+        src: url(ProximaNova-Bold.ttf);
+    }
+    </style>
 
 </head>
 
@@ -44,7 +62,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/Blogo.png" alt="Homepage">
+                <img src="images/breeze/darklogo.png" alt="Homepage">
             </a>
         </div>
 
@@ -53,13 +71,13 @@
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
             <div class="header-nav__content">
-                <h3>Navigation</h3>
+                <h3 style="font-family:ADR">Navigation</h3>
 
                 <ul class="header-nav__list">
-                  <li ><a href="index.html" title="home">Home</a></li>
-                  <li><a href="events.html" title="clients">Events</a></li>
-                  <li ><a href="gallery.html" title="works">Gallery</a></li>
-                  <li class="current"><a href="sponsors.html" title="clients">Sponsors</a></li>
+                  <li ><a href="index.html" title="home" style="font-family:PN">Home</a></li>
+                  <li><a href="events.html" title="clients" style="font-family:PN">Events</a></li>
+                  <li ><a href="gallery.html" title="works" style="font-family:PN">Gallery</a></li>
+                  <li class="current"><a href="sponsors.html" title="clients" style="font-family:PN">Sponsors</a></li>
                 </ul>
 
                 <!--<p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>-->
@@ -100,7 +118,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <!--<h3 class="subhead">Sponsors</h3>-->
-                <h1 class="display-2">Sponsors</h1>
+                <h1 class="display-2" style="font-family:ADR">Sponsors</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -177,7 +195,7 @@
             <div class="row section-header" data-aos="fade-up">
                 <div class="col-full">
                     <!--<h3 class="subhead">Sponsors</h3>-->
-                    <h1 class="display-2">Partners</h1>
+                    <h1 class="display-2" style="font-family:ADR">Partners</h1>
                 </div>
             </div> <!-- end section-header -->
 
@@ -323,15 +341,16 @@
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+      <div id="loader">
+        <div class="line-scale-pulse-out">
+          <img src="images/breeze/cat.gif" alt="">
+          <!--<div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>-->
         </div>
+      </div>
     </div>
 
 
