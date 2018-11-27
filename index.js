@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#submit").on('click',function(){
     const data = {
       sportsName: $("#sportsDropdown :selected").text(),
-      noofplayers: $("#noofplayers").text(),
+      noofplayers: $("#noofplayers").val(),
       name: $("#name").val(),
       collegeName: $("#collegeName").val(),
       email: $("#email").val(),
