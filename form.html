@@ -23,13 +23,16 @@
     <link rel="stylesheet" href="css/base2.css">
     <link rel="stylesheet" href="css/vendor2.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
     <!-- ---- Include the above in your HEAD tag ---------->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+
 
     <!-- script
     ================================================== -->
@@ -50,6 +53,14 @@
     @font-face {
         font-family: ADR;
         src: url(Atami-Display-Regular.otf);
+    }
+    @font-face {
+        font-family: PN;
+        src: url(ProximaNova-Regular.ttf);
+    }
+    @font-face {
+        font-family: PNB;
+        src: url(ProximaNova-Bold.ttf);
     }
     </style>
 
@@ -72,13 +83,13 @@
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
             <div class="header-nav__content">
-                <h3>Navigation</h3>
+                <h3 style="font-family:ADR">Navigation</h3>
 
                 <ul class="header-nav__list">
-                  <li ><a href="index.html" title="home">Home</a></li>
-                  <li class="current"><a href="events.html" title="clients">Events</a></li>
-                  <li ><a href="gallery.html" title="works">Gallery</a></li>
-                  <li class="current"><a href="sponsors.html" title="clients">Sponsors</a></li>
+                  <li ><a href="index.html" title="home" style="font-family:PN">Home</a></li>
+                  <li class="current"><a href="events.html" title="clients" style="font-family:PN">Events</a></li>
+                  <li ><a href="gallery.html" title="works" style="font-family:PN">Gallery</a></li>
+                  <li class="current"><a href="sponsors.html" title="clients" style="font-family:PN">Sponsors</a></li>
                 </ul>
 
                 <!--<p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>-->
@@ -131,13 +142,13 @@
                 <div class="row">
                     <div class="col-md-4 text-center" style="width:50%;display:inline;">
                           <h2 style="color:white;margin-left:-50%;font-family:AR;">Sport:</h2><select id="sportsDropdown" name="event" value="Select" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;"><option value="badmintonb">Badminton (Boys)</option><option value="badmintong">Badminton (Girls)</option><option value="ltb">Lawn Tennis (Boys)</option><option value="ltg">Lawn Tennis (Girls)</option><option value="ttb">Table Tennis (Boys)</option><option value="ttg">Table Tennis (Girls)</option><option value="vbb">Volleyball (Boys)</option><option value="vbg">Volleyball (Girls)</option><option value="bbb">Bascketball (Boys)</option><option value="bbg">Bascketball (Girls)</option><option value="fb">Football</option><option value="ft">Futsal (Girls)</option><option value="cr">Cricket</option><option value="ch">Chess</option><option value="sq">Squash</option><option value="tk">Taekwondo (Boys & Girls)</option></select>
-                          <h2 style="color:white;margin-left:-60%;font-family:AR;">Number of players:</h2><input id="noofplayers" type="text" placeholder="Number of players (including subs)" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
+                          <h2 style="color:white;margin-left:-52%;font-family:AR;">Number <br>of players:</h2><input id="noofplayers" type="text" placeholder="Number of players (including subs)" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
                           <h2 style="color:white;margin-left:-50%;font-family:AR;">Name:</h2><input id="name" type="text" placeholder="Name" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
                           <h2 style="color:white;margin-left:-50%;font-family:AR;">College:</h2><input id="collegeName" type="text" placeholder="College" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
                           <h2 style="color:white;margin-left:-50%;font-family:AR;">Email:</h2><input id="email" type="text" placeholder="Email" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
-                          <h2 style="color:white;margin-left:-60%;font-family:AR;">Phone Number:</h2><input id="phno" type="text" placeholder="Phone Number" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
+                          <h2 style="color:white;margin-left:-55%;font-family:AR;">Phone <br>Number:</h2><input id="phno" type="text" placeholder="Phone Number" style="border-bottom:1px solid white;color:white;margin-left:30%;width:60%;">
                           <a id="submit" href="#" class="btn btn-primary" style="border:1px solid white;background-color:#111111;color:#46c1ac;font-family:AR;">Register</a>
-                          <p style="padding-top:3%;font-size:1.5rem;">Check the rule book for further details. <span style="padding-left:3%;">Contact SPORTS DIRECTORS for info:</span> <span style="padding-left:1%;">Anmol Mahajan (<span style="color:#46c1ac">9560954626</span>), Sanjana Maurya (<span style="color:#46c1ac">9560954626</span>)</span></p>
+                          <p style="padding-top:3%;font-size:1.5rem;font-family:PN">Check the rule book for further details. <span style="padding-left:3%;">Contact <span style="font-weight: bold;">Sports Directors</span> for info:</span> <span style="padding-left:1%;">Anmol Mahajan (<span style="color:#46c1ac">9560954626</span>), Sanjana Maurya (<span style="color:#46c1ac">9560954626</span>)</span></p>
                     </div>
                 </div>
               </p>

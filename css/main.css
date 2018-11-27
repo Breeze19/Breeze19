@@ -84,6 +84,7 @@ html {
 }
 .yellow_names{
 	color: #e25c7f;
+  font-family: PN;
 }
 .social_panel{
 	flex-basis: 50%;
