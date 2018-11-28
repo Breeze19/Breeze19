@@ -1277,7 +1277,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .display-1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 7.8rem;
+    font-size: 5.8rem;
     line-height: 1.25;
     color: #231f20;
     margin-top: 0;
@@ -1325,7 +1325,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .display-1 {
-        font-size: 7.2rem;
+        font-size: 5.2rem;
     }
     .display-2 {
         font-size: 4.4rem;
@@ -1334,7 +1334,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 800px) {
     .display-1 {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
     }
     .display-2 {
         font-size: 4rem;
@@ -1343,7 +1343,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 600px) {
     .display-1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .display-2 {
         font-size: 3.3rem;
@@ -1355,7 +1355,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 400px) {
     .display-1 {
-        font-size: 4.2rem;
+        font-size: 3.2rem;
     }
     .display-2 {
         font-size: 3rem;
