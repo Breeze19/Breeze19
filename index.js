@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  firebase.initializeApp(config)
   $("#submit").on('click',function(){
     const data = {
       sportsName: $("#sportsDropdown :selected").text(),
@@ -7,9 +6,15 @@ $(document).ready(function(){
       name: $("#name").val(),
       collegeName: $("#collegeName").val(),
       email: $("#email").val(),
-      phno: $("#phno").val()
+      phno: $("#phno").val(),
+      stream: $("#st").val(),
+      cgx: $("#cgx").val(),
+      cgxii: $("#cgxii").val(),
+      cgg: $("#cgg").val(),
+      lod: $("#lod").val()
     }
-    console.log(data)
-    firebase.database().ref("/data/").push().set(data)
+    $.post("https://breeze19sports.herokuapp.com/register",{data},function(response){
+      console.log(response.result)
+    })
   })
 })

@@ -3,6 +3,12 @@
  *
  * ------------------------------------------------------------------- */
 
+ $(document).ready(function(){
+   $("#register").on('click',function(){
+     window.location='events.html'
+   });
+ });
+
 (function($) {
 
     "use strict";
@@ -290,6 +296,7 @@
                 e.preventDefault();
                 e.stopPropagation();
 
+            if($target.length){
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
             }, cfg.scrollDuration, 'swing').promise().done(function () {
@@ -301,6 +308,7 @@
 
                 window.location.hash = target;
             });
+          }
         });
 
     };
