@@ -2819,7 +2819,7 @@ html.no-csstransitions .home-content__main {
 .s-clients {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
-    background-color: #e6e6e6;
+    background-color: white;
     color: #757575;
     position: relative;
 }
@@ -3729,5 +3729,14 @@ footer .row {
 @keyframes moveSlideshow {
   100% {
     transform: translateX(-66.6666%);
+  }
+}
+
+#cat{
+  padding-left:45%;padding-right:45%;
+}
+@media only screen and (max-width: 500px) {
+  #cat{
+    padding-left:30%;padding-right:30%;
   }
 }
