@@ -33,7 +33,6 @@ $(document).ready(function(){
       weightCatBoys: $("#weightCatBoys :selected").text(),
       weightCatGirls: $("#weightCatGirls :selected").text(),
       category: $("#category :selected").text(),
-      noofplayers: $("#noofplayers").val(),
       name: $("#name").val(),
       collegeName: $("#collegeName").val(),
       email: $("#email").val(),
@@ -52,10 +51,9 @@ $(document).ready(function(){
   })
   $("#submittkp").on('click',function(){
     const data = {
-      category: $("#category :selected").text(),
+      category1: $("#category1 :selected").text(),
+      category2:$("category2 :selected").text(),
       belt: $("#belt").text(),
-      pair: $("#pair").text(),
-      group: $("#group").text(),
       noofplayers: $("#noofplayers").val(),
       name: $("#name").val(),
       collegeName: $("#collegeName").val(),
