@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $("#redirect).click(function(){
+    window.location.href="https://breeze19.appspot.com/"
+    })
   $("#sportsDropdown").on('change',function(){
     console.log("1")
     var val = $("#sportsDropdown :selected").val()
